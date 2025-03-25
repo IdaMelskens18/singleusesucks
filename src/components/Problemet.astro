@@ -1,0 +1,26 @@
+
+<div class="overflow-clip mt-50 max-w-4xl mx-auto">
+    <section id="horisontalscrollsection" class="h-[500vw] [&_figcaption]:text-xl">
+        <ul id="horisontalliste" class="list-none pl-0 flex sticky top-[20vh] [&_img]:rounded-xl">
+        <li class="pl-0 flex w-[100vw] items-start justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto"><figure class="flex flex-row max-w-[800px]"><img src="/problemet/plastic-bottle.jpeg" class="w-3/5" alt="foto" /><figcaption class="pl-4 w-2/5 content-center">Problemet med plastforurening er, at det skader dyrelivet, økosystemerne og menneskers sundhed.</figcaption></figure></li>
+        <li class="flex w-[100vw] items-start justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto"><figure class="flex flex-row max-w-[800px]"><img src="/problemet/trash.jpg" class="w-3/5" alt="foto" /><figcaption class="pl-4 w-2/5 content-center">Havdyr indtager eller bliver viklet ind i plastikaffald, hvilket fører til skader eller død.</figcaption></figure></li>
+        <li class="flex w-[100vw] items-start justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto"><figure class="flex flex-row max-w-[800px]"><img src="/problemet/plastic-bottle.jpeg" class="w-3/5" alt="foto" /><figcaption class="pl-4 w-2/5 content-center">Det tager hundredvis af år at nedbryde plastik, og det forurener land og hav med giftige kemikalier og mikroplastik.</figcaption></figure></li>
+        <li class="flex w-[100vw] items-start justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto"><figure class="flex flex-row max-w-[800px]"><img src="/problemet/plastic-bottle.jpeg" class="w-3/5" alt="foto" /><figcaption class="pl-4 w-2/5 content-center">Mennesker udsættes for mikroplast gennem mad, vand og luft med potentielle sundhedsrisici til følge. </figcaption></figure></li>
+        </ul>
+    </section>
+</div>
+
+<script>
+    	/* Import af Motion One bibliotek */
+	import { animate, stagger, inView, scroll } from "motion";
+
+	// js blocks goes here
+    
+    /* Horisontal scroll sektion */
+	scroll(
+	animate("#horisontalliste", {
+		transform: ["none", "translateX(-500vw)"]
+	}),
+	{ target: document.querySelector("#horisontalscrollsection") }
+	); 
+</script>
