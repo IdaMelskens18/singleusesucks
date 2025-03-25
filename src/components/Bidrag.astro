@@ -4,6 +4,8 @@ import card1 from "../assets/images/card1.png";
 import card2 from "../assets/images/card2.png";
 import card3 from "../assets/images/card3.png";
 import card4 from "../assets/images/card4.png";
+import coral6 from "../assets/images/coral6.png";
+import coral62 from "../assets/images/coral62.png";
 ---
 
 <section>
@@ -14,7 +16,7 @@ import card4 from "../assets/images/card4.png";
 <section>
   <div class="grid grid-cols-4 place-items-center">
     <!-- card1 starter her -->
-    <div class="card bg-base-100 w-60 shadow-sm">
+    <div class="card bg-base-100 w-60 shadow-sm rounded">
       <figure>
         <Image src={card1} alt="card 1" class="w-100" />
       </figure>
@@ -26,7 +28,7 @@ import card4 from "../assets/images/card4.png";
     <!-- card1 slutter her  -->
 
     <!-- card2 starter her -->
-    <div class="card bg-base-100 w-60 shadow-sm">
+    <div class="card bg-base-100 w-60 shadow-sm rounded">
       <figure>
         <Image src={card2} alt="card 1" class="w-100" />
       </figure>
@@ -40,9 +42,9 @@ import card4 from "../assets/images/card4.png";
     <!-- card3 starter her -->
     <div class="card bg-base-100 w-60 shadow-sm">
       <figure>
-        <Image src={card3} alt="card 1" class="w-100" />
+        <Image src={card3} alt="card 1" class="" />
       </figure>
-      <div class="card-body bg-[#FF116C]">
+      <div class="card-body bg-[#FF116C] rounded-b-md">
         <h2 class="card-title">Card Title</h2>
         <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
       </div>
@@ -50,7 +52,7 @@ import card4 from "../assets/images/card4.png";
     <!-- card3 slutter her  -->
 
     <!-- card4 starter her -->
-    <div class="card bg-base-100 w-60 shadow-sm">
+    <div class="card bg-base-100 w-60 shadow-sm rounded">
       <figure>
         <Image src={card4} alt="card 1" class="w-100" />
       </figure>
@@ -60,5 +62,11 @@ import card4 from "../assets/images/card4.png";
       </div>
     </div>
     <!-- card4 slutter her  -->
+    <div class="">
+      <Image src={coral6} alt="koral" class="w-120 absolute -left-6 h-auto -z-80 -mt-130" />
+    </div>
+    <div>
+      <Image src={coral62} alt="koral" class="w-120 right-0 absolute -mt-130 -z-80" />
+    </div>
   </div>
 </section>
