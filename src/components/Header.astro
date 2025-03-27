@@ -2,7 +2,9 @@
 import { Image } from "astro:assets";
 import logo from "../assets/images/logo.svg";
 import Button from "../components/Button.astro";
+import Link from "../components/Link.astro";
 ---
+
 <!-- Progress-bar placeret i toppen af sitet -->
 <div class="progress-bar h-2 fixed w-full bg-[#FF116C] left-0 origin-top-left top-0 right-0"></div>
 
@@ -14,16 +16,15 @@ import Button from "../components/Button.astro";
       </div>
     </div>
     <div class="navbar-end mr-4">
-      <Button>Støt</Button>
+      <Link href="#footer">Støt</Link>
     </div>
   </div>
 </div>
 
 <script>
-   	/* Import af Motion One bibliotek */
-	import { animate, stagger, inView, scroll } from "motion";
-
+  /* Import af Motion One bibliotek */
+  import { animate, stagger, inView, scroll } from "motion";
 
   /*Progress-baren/læseindikatoren */
-	scroll( animate(".progress-bar", { scaleX: [0, 1] }));
+  scroll(animate(".progress-bar", { scaleX: [0, 1] }));
 </script>
