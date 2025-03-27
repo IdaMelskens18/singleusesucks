@@ -12,7 +12,7 @@ import sostjerne from "../assets/images/sostjerne.png";
 
 <section class="bg-[url('/images/bg2.webp')] bg-cover bg-no-repeat bg-center relative h-screen">
   <div class="place-self-center p-14">
-    <h2 class="text-4xl font-bold text-white">Beskyt vores hav og miljø</h2>
+    <h2 class="text-6xl font-bold text-white">Beskyt vores hav og miljø</h2>
   </div>
   <div class="grid grid-cols-4 place-items-center">
     <!-- card1 starter her -->
@@ -71,12 +71,12 @@ import sostjerne from "../assets/images/sostjerne.png";
     </a>
     <!-- card4 slutter her  -->
 
-    <section class="parallaxgrafik fullwidthsection z-1">
+    <section class="bidragparallaxgrafik fullwidthsection z-1">
       <div class="mt-8 h-screen w-full bg-cover bg-center grid grid-cols-12 overflow-hidden">
-        <Image src={coral6} alt="koral" class="w-120 absolute -left-6 h-auto -z-10 -mt-109" />
-        <Image src={sohest} alt="koral" class="w-30 absolute h-auto -z-10 left-93 col-start-2 parallaxgrafik1" />
-        <Image src={coral62} alt="koral" class="w-120 bg-left absolute right-0 -mt-109 -z-10" />
-        <Image src={sostjerne} alt="koral" class="w-70 absolute h-auto -z-10 right-70 col-start-5 parallaxgrafik2" />
+        <Image src={coral6} alt="koral" class="w-120 absolute -left-6 h-auto -z-10 -mt-115" />
+        <Image src={sohest} alt="søhest" class="w-30 absolute h-auto z-10 left-93 col-start-2 bidragparallaxgrafik1" />
+        <Image src={coral62} alt="koral" class="w-120 bg-left absolute right-0 -mt-115 -z-10" />
+        <Image src={sostjerne} alt="søstjerne" class="w-70 absolute h-auto z-10 right-70 col-start-5 bidragparallaxgrafik2" />
       </div>
     </section>
   </div>
@@ -86,12 +86,13 @@ import sostjerne from "../assets/images/sostjerne.png";
   import { animate, stagger, inView, scroll } from "motion";
 
   /* Parallaxgrafik */
-  scroll(animate(".parallaxgrafik1", { y: [120, -600] }), {
-    target: document.querySelector(".parallaxgrafik"),
+  scroll(animate(".bidragparallaxgrafik1", { y: [120, -600] }), {
+    target: document.querySelector(".bidragparallaxgrafik"),
     offset: ["start end", "end start"],
   });
-  scroll(animate(".parallaxgrafik2", { x: [-100, 100], y: [130, -800] }), {
-    target: document.querySelector(".parallaxgrafik"),
+
+  scroll(animate(".bidragparallaxgrafik2", { x: [-100, 100], y: [120, -800] }), {
+    target: document.querySelector(".bidragparallaxgrafik"),
     offset: ["start end", "end start"],
   });
 </script>
