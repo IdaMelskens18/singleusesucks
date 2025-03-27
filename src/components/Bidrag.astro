@@ -1,23 +1,28 @@
 ---
 import { Image } from "astro:assets";
-import card1 from "../assets/images/card1.png";
-import card2 from "../assets/images/card2.png";
-import card3 from "../assets/images/card3.png";
-import card4 from "../assets/images/card4.png";
+import card11 from "../assets/images/card11.png";
+import card21 from "../assets/images/card21.png";
+import card31 from "../assets/images/card31.png";
+import card41 from "../assets/images/card41.png";
 import coral6 from "../assets/images/coral6.png";
 import coral62 from "../assets/images/coral62.png";
+import sohest from "../assets/images/sohest.png";
+import sostjerne from "../assets/images/sostjerne.png";
 ---
 
 <section>
+  <div class="place-self-center m-25">
+    <h2 class="text-4xl font-bold">Beskyt vores hav og miljø</h2>
+  </div>
   <div class="grid grid-cols-4 place-items-center">
     <!-- card1 starter her -->
     <div class="card bg-base-100 w-60 shadow-sm">
       <figure>
-        <Image src={card1} alt="card 1" class="w-100 rounded-t-md" />
+        <Image src={card11} alt="card 1" class="w-100 rounded-t-md" />
       </figure>
-      <div class="card-body bg-[#FF116C]">
-        <h2 class="card-title">Card Title</h2>
-        <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+      <div class="card-body bg-[#FF116C] rounded-b-md">
+        <h2 class="card-title">Støt hver måned</h2>
+        <p>Giv et fast valgfrit beløb</p>
       </div>
     </div>
     <!-- card1 slutter her  -->
@@ -25,11 +30,11 @@ import coral62 from "../assets/images/coral62.png";
     <!-- card2 starter her -->
     <div class="card bg-base-100 w-60 shadow-sm">
       <figure>
-        <Image src={card2} alt="card 1" class="w-100 rounded-t-md" />
+        <Image src={card21} alt="card 2" class="w-100 rounded-t-md" />
       </figure>
-      <div class="card-body bg-[#FF116C]">
-        <h2 class="card-title">Card Title</h2>
-        <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+      <div class="card-body bg-[#FF116C] rounded-b-md">
+        <h2 class="card-title">Giv et enkeltbidrag</h2>
+        <p>Støt med et valgfrit beløb</p>
       </div>
     </div>
     <!-- card2 slutter her  -->
@@ -37,11 +42,11 @@ import coral62 from "../assets/images/coral62.png";
     <!-- card3 starter her -->
     <div class="card bg-base-100 w-60 shadow-sm">
       <figure>
-        <Image src={card3} alt="card 1" class="w-100 rounded-t-md" />
+        <Image src={card31} alt="card 3" class="w-100 rounded-t-md" />
       </figure>
-      <div class="card-body bg-[#FF116C]">
-        <h2 class="card-title">Card Title</h2>
-        <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+      <div class="card-body bg-[#FF116C] rounded-b-md">
+        <h2 class="card-title">Støt med testamente</h2>
+        <p>Giv en renere verden videre</p>
       </div>
     </div>
     <!-- card3 slutter her  -->
@@ -49,19 +54,26 @@ import coral62 from "../assets/images/coral62.png";
     <!-- card4 starter her -->
     <div class="card bg-base-100 w-60 shadow-sm">
       <figure>
-        <Image src={card4} alt="card 1" class="w-100 rounded-t-md" />
+        <Image src={card41} alt="card 4" class="w-100 rounded-t-md" />
       </figure>
-      <div class="card-body bg-[#FF116C]">
-        <h2 class="card-title">Card Title</h2>
-        <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+      <div class="card-body bg-[#FF116C] rounded-b-md">
+        <h2 class="card-title">Bliv sponsor</h2>
+        <p>Støt som virksomhed</p>
       </div>
     </div>
     <!-- card4 slutter her  -->
     <div class="">
-      <Image src={coral6} alt="koral" class="w-120 absolute -left-6 h-auto -z-10 -mt-130" />
+      <Image src={coral6} alt="koral" class="w-120 absolute -left-6 h-auto -z-10 -mt-100" />
     </div>
     <div>
-      <Image src={coral62} alt="koral" class="w-120 bg-left absolute right-0 -mt-130 -z-10" />
+      <Image src={sohest} alt="koral" class="w-30 absolute h-auto -z-10 left-93" />
+    </div>
+
+    <div>
+      <Image src={coral62} alt="koral" class="w-120 bg-left absolute right-0 -mt-100 -z-10" />
+    </div>
+    <div>
+      <Image src={sostjerne} alt="koral" class="w-70 absolute h-auto -z-10 right-70" />
     </div>
   </div>
 </section>
