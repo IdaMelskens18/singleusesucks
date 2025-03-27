@@ -1,17 +1,18 @@
 ---
 import { Image } from "astro:assets";
 import logo from "../assets/images/logo.svg";
+import Button from "../components/Button.astro";
 ---
 
-<div>
-  <div class="navbar bg-amber-300">
+<div class="">
+  <div class="navbar bg-[#01283C]">
     <div class="navbar-start">
       <div class="">
-        <Image src={logo} alt="single use sucks" class="mt-4 ml-4 max-h-[95px]" />
+        <Image src={logo} alt="single use sucks" class="my-auto ml-4 p-2 max-h-[95px]" />
       </div>
     </div>
     <div class="navbar-end mr-4">
-      <a class="btn bg-[#FF116C] w-30 border-none rounded-full text-white text-xl">Støt</a>
+      <Button>Støt</Button>
     </div>
   </div>
 </div>
