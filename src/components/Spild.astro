@@ -1,14 +1,38 @@
 ------
-<section class="main bg-[url('/images/cleanocean.webp')] bg-cover bg-no-repeat bg-center sticky top-0 h-screen w-full"> 
-    <div class="img-container1 absolute bottom-0"> <img src="/images/bag.png" alt="" style="width: 300px; height: 300px;"> </div> 
-    <div class="img-container3 absolute bottom-0 left-100"> <img src="/images/glass.png" alt="" style="width: 200px; height: 150px;"> </div> 
-    <div class="img-container4 absolute bottom-0 right-80"> <img src="/images/lid.png" alt="" style="width: 250px; height: 200px;"> </div> </div> 
-    <div class="img-container5 absolute bottom-0 right-0"> <img src="/images/pipet.png" alt="" style="width: 300px; height: 300px;"> </div> <div class="img-container6 absolute bottom-80 right-0"> <img src="/images/plast.png" alt="" style="width: 350px; height: 250px;"> </div> <div class="absolute bottom-0 top-50"> <img src="/images/bottle.png" alt="" style="width: 200px; height: 250px;"> </div>
- <section class=" parallaxelement info1 w-2/4 mx-auto p-10 mb-40 bg-[rgba(1,69,81,0.5)] text-xl" style="border-radius: 20px;"> <h3 class=" text-white text-1xl uppercase text-center mb-10">hvad er plastikforurening?</h3> <p class="text-white text-4xl text-center">Plastforurening er ophobning af plastaffald i miljøet, som skader økosystemer, dyreliv og menneskers sundhed. </p> </section> <section class="parallaxelement info2 w-2/4 mx-auto p-10 mb-40 bg-[rgba(1,69,81,0.5)] text-xl" style="border-radius: 20px;"> <h3 class="text-white text-1xl uppercase text-center mb-10">hvad er plastikforurening?</h3> <p class="text-white text-4xl text-center">Det skyldes overdreven plastproduktion, dårlig affaldshåndtering og langsom nedbrydning. </p> </section> <section class=" parallaxelement info3 w-2/4 mx-auto p-10 mb-40 bg-[rgba(1,69,81,0.5)] text-xl" style="border-radius: 20px;"> <h3 class="text-white text-1xl uppercase text-center mb-10">hvad er plastikforurening?</h3> <p class="text-white text-4xl text-center">Engangsplastik som poser, flasker og emballage er en stor del af problemet og ender ofte i havene, floderne og på lossepladserne. </p> </section> <section class="parallaxelement info4 w-2/4 mx-auto p-10 mb-40 bg-[rgba(1,69,81,0.5)] text-xl" style="border-radius: 20px;"> <p class="text-white text-4xl text-center">Denne forurening forstyrrer livet i havet, frigiver giftige kemikalier og bidrager til mikroplastforurening i fødevarer og vand. </p> </section>
-</section>
+<article class="main bg-[url('/images/cleanocean.webp')] bg-cover bg-no-repeat bg-center sticky overflow-hidden top-0 h-screen w-full z-[-50]"> 
+    <div>
+    <section>
+        <div class="img-container1 absolute bottom-0"> <img src="/images/bag.png" alt="" style="width: 300px; height: 300px;"> </div> 
+        <div class="img-container3 absolute bottom-0 left-100"> <img src="/images/glass.png" alt="" style="width: 200px; height: 150px;"> </div> 
+        <div class="img-container4 absolute bottom-0 right-80"> <img src="/images/lid.png" alt="" style="width: 250px; height: 200px;"> </div> </div> 
+        <div class="img-container5 absolute bottom-0 right-0"> <img src="/images/pipet.png" alt="" style="width: 300px; height: 300px;"> </div> 
+        <div class="img-container6 absolute bottom-80 right-0"> <img src="/images/plast.png" alt="" style="width: 350px; height: 250px;"> 
+        </div> <div class="absolute bottom-0 top-50"> <img src="/images/bottle.png" alt="" style="width: 200px; height: 250px;"> </div>
+    </section>
+    <section class="[&_h3]:font-bold [&_div]:bg-[rgba(1,69,81,0.9)] [&_div]:mb-100">
+        <div class=" parallaxelement info1 w-2/4 mx-auto p-10" style="border-radius: 20px;"> 
+            <h3 class=" text-white text-xl uppercase text-center mb-8">hvad er plastikforurening?</h3> 
+            <p class="text-white text-4xl text-center">Plastforurening er ophobning af plastaffald i miljøet, som skader økosystemer, dyreliv og menneskers sundhed. </p> 
+        </div> 
+        <div class="parallaxelement info2 w-2/4 mx-auto p-10" style="border-radius: 20px;"> 
+            <h3 class="text-white text-xl uppercase text-center mb-8">hvad er plastikforurening?</h3> 
+            <p class="text-white text-4xl text-center">Det skyldes overdreven plastproduktion, dårlig affaldshåndtering og langsom nedbrydning. </p> 
+        </div> 
+        <div class=" parallaxelement info3 w-2/4 mx-auto p-10" style="border-radius: 20px;"> 
+            <h3 class="text-white text-xl uppercase text-center mb-8">hvad er plastikforurening?</h3> 
+            <p class="text-white text-4xl text-center">Engangsplastik som poser, flasker og emballage er en stor del af problemet og ender ofte i havene, floderne og på lossepladserne. </p> 
+        </div> 
+        <div class="parallaxelement info4 w-2/4 mx-auto p-10" style="border-radius: 20px;">
+            <h3 class="text-white text-xl uppercase text-center mb-8">hvad er plastikforurening?</h3> 
+            <p class="text-white text-4xl text-center">Denne forurening forstyrrer livet i havet, frigiver giftige kemikalier og bidrager til mikroplastforurening i fødevarer og vand. </p> 
+        </div>
+    </section>
+    </div>
+</article>
+
 <script>
  import {animate, stagger, inView, scroll} from "motion"; 
- scroll(animate(".parallaxelement", { y: [ "-100vh", "150vh"] }), 
+ scroll(animate(".parallaxelement", { y: [ "-200vh", "500vh"] }), 
  { target: document.querySelector(".parallaxelement"), 
  }); 
  </script>
