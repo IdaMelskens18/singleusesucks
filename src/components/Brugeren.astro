@@ -1,0 +1,96 @@
+<article class="h-full w-full bg-cover bg-center" style="background-image: url('/problemet/bg3.webp')" >
+    <div class="parallaxgrafik sticky h-screen w-full">
+        <img src="/brugeren/blufisk.png" alt="fisk" class="absolute max-w-120 -left-50 top-40 parallaxgrafik1">
+        <img src="/brugeren/fisk.png" alt="fisk" class="absolute max-w-100 left-0 top-80 parallaxgrafik2">
+        <img src="/brugeren/fisk2.png" alt="fisk" class="absolute max-w-150 -left-30 top-95 parallaxgrafik3">
+    </div>
+    <section class="h-screen w-full z-20 inview_animate">
+        <h1 class="text-center font-bold text-6xl pb-36">Gode råd mod plastikspil</h1>
+        <div class="container grid grid-cols-4 max-w-[1200px] mx-auto [&_span]:font-bold [&_div]:mx-auto [&_div]:my-8 staggeranimation" id="stagger">
+
+            <div class="grid grid-rows-2 gap-4 justify-items-center">
+                <img src="/brugeren/bag.svg" alt="">
+                <p class="text-center max-w-[250px]">
+                    <span>Dit inkøb</span><br>
+                    Tag mulepose med og sig nej tak til plastikposer 
+                </p>
+            </div>
+            <div class="grid grid-rows-2 gap-4 justify-items-center">
+                <img src="/brugeren/bottle.svg" alt="">
+                <p class="text-center max-w-[250px]">
+                    <span>Din vandflaske</span><br>
+                    Brug drikkedunk og undgå købevand</p>
+            </div>
+            <div class="grid grid-rows-2 gap-4 justify-items-center">
+                <img src="/brugeren/milk.svg" alt="">
+                <p class="text-center max-w-[250px]">
+                    <span>Din mælk</span><br>
+                    Køb mælk uden skruelåg</p>
+            </div>
+            <div class="grid grid-rows-2 gap-4 justify-items-center">
+                <img src="/brugeren/drink.svg" alt="">
+                <p class="text-center max-w-[250px]">
+                    <span>Din fest</span><br>
+                    Drop engangsservice, balloner og sugerør</p>
+            </div>
+            <div class="grid grid-rows-2 gap-4 justify-items-center">
+                <img src="/brugeren/clothes.svg" alt="">
+                <p class="text-center max-w-[250px]">
+                    <span>Din tøjvask</span><br>
+                    Fyld maskinen, så du slider mindre på tøjet</p>
+            </div>
+            <div class="grid grid-rows-2 gap-4 justify-items-center">
+                <img src="/brugeren/bodyproduct.svg" alt="">
+                <p class="text-center max-w-[250px]">
+                    <span>Dine plejeprodukter</span><br>
+                    Køb i store beholdere frem for mange små</p>
+            </div>
+            <div class="grid grid-rows-2 gap-4 justify-items-center">
+                <img src="/brugeren/toilet.svg" alt="">
+                <p class="text-center max-w-[250px]">
+                    <span>Dit toiletbesøg</span><br>
+                    Kun tre ting i toilettet - tis, lort og papir</p>
+            </div>
+            <div class="grid grid-rows-2 gap-4 justify-items-center">
+                <img src="/brugeren/toothbrush.svg" alt="">
+                <p class="text-center max-w-[250px]">
+                    <span>Din tandbørste</span><br>
+                    Bruk bamboo tandbørste i stedet for plastic</p>
+            </div>
+        </div>
+    </section>
+
+
+</article>
+
+<script>
+    /* Import af Motion One bibliotek */
+import { animate, stagger, inView, scroll, delay } from "motion";
+
+/* Parallaxgrafik */ 
+scroll(animate(".parallaxgrafik1", { x: [-400, 2600] }), {
+		target: document.querySelector(".parallaxgrafik"), offset: ["start end", "end start"]
+	});
+	scroll(animate(".parallaxgrafik2", { x:[2000, -800] }), {
+		target: document.querySelector(".parallaxgrafik"), offset: ["start end", "end start"]
+	});
+	scroll(animate(".parallaxgrafik3", { x: [-1500, 2000], y: [0, 400] }), {
+		target: document.querySelector(".parallaxgrafik"), offset: ["start end", "end start"]
+	});
+
+/* inView animation */
+inView( ".inview_animate" , () =>{
+	animate( ".inview_animate", {y:[200, 0], opacity:[0, 1]}, {duration: 1, delay:1})
+	})
+
+/* Stagger animation */
+inView( "#stagger" , () =>{
+	animate(
+	".staggeranimation div",
+	{ opacity: [0, 1], x:[-100,0]},
+	{ 
+		delay: stagger(.3, { startDelay: 1 })
+	}
+	)
+})
+</script>

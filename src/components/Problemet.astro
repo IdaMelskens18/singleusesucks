@@ -1,6 +1,61 @@
----
----
----
----
-<section style="background-image: url('images/cleanocean.png');">
-</section>
+
+<article>
+    <div class="sticky top-0 left-0 right-0 bottom-0 h-screen w-full bg-cover bg-center z-10" style="background-image: url('/problemet/bg2.webp')" >
+        <img src="/problemet/trash1.webp" alt="plastic-bag" class="absolute max-w-120 left-0 top-80 floatanimation1">
+        <img src="/problemet/trash2.webp" alt="bottle-cap" class="absolute max-w-100 left-160 top-180 floatanimation2">
+        <img src="/problemet/trash3.webp" alt="plastic-bag" class="absolute max-w-150 left-300 top-140 floatanimation3">
+    </div>
+    <div class="relative flex justify-end z-11">
+        <div class="overflow-clip mt-0 max-w-5xl mx-auto">
+            <article id="horisontalscrollsection" class="h-[500vw] [&_figcaption]:text-3xl font-bold">
+                <ul id="horisontalliste" class="list-none pl-0 flex sticky top-[30vh] [&_img]:rounded-xl">
+                <li class="pl-0 flex w-[100vw] items-start justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto"><figure class="flex flex-row max-w-[1000px]"><img src="/problemet/plastic-bottle.webp" class="w-1/2" alt="foto" /><figcaption class="pl-12 w-1/2 content-center">Problemet med plastforurening er, at det skader dyrelivet, økosystemerne og menneskers sundhed.</figcaption></figure></li>
+                <li class="flex w-[100vw] items-start justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto"><figure class="flex flex-row max-w-[1000px]"><img src="/problemet/trash.webp" class="w-1/2" alt="foto" /><figcaption class="pl-12 w-1/2 content-center">Havdyr indtager eller bliver viklet ind i plastikaffald, hvilket fører til skader eller død.</figcaption></figure></li>
+                <li class="flex w-[100vw] items-start justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto"><figure class="flex flex-row max-w-[1000px]"><img src="/problemet/art-trash.webp" class="w-1/2" alt="foto" /><figcaption class="pl-12 w-1/2 content-center">Det tager hundredvis af år at nedbryde plastik, og det forurener land og hav med giftige kemikalier og mikroplastik.</figcaption></figure></li>
+                <li class="pl-0 flex w-[100vw] items-start justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto"><figure class="flex flex-row max-w-[1000px]"><img src="/problemet/plastic-in-fish.webp" class="w-1/2" alt="foto" /><figcaption class="pl-12 w-1/2 content-center">Mennesker udsættes for mikroplast gennem mad, vand og luft med potentielle sundhedsrisici til følge. </figcaption></figure></li>
+                </ul>
+            </article>
+        </div>
+    </div>
+</article>
+
+<style>
+    @keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-100px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+.floatanimation1{
+    animation: float 5s ease-in-out infinite;
+    animation-delay: .5s;
+}
+.floatanimation2{
+    animation: float 4s ease-in-out infinite;
+    animation-delay: 1s;
+}
+.floatanimation3{
+    animation: float 4s ease-in-out infinite;
+    animation-delay: .1s;
+}
+</style>
+
+<script>
+    	/* Import af Motion One bibliotek */
+	import { animate, stagger, inView, scroll } from "motion";
+
+	// js blocks goes here
+    
+    /* Horisontal scroll sektion */
+	scroll(
+	animate("#horisontalliste", {
+		transform: ["none", "translateX(-360vw)"]
+	}),
+	{ target: document.querySelector("#horisontalscrollsection") }
+	); 
+</script>

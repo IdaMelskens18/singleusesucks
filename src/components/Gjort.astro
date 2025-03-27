@@ -1,0 +1,69 @@
+<article class="">
+    <!-- <section class="crossfadeimages mx-auto sticky w-screen h-[1000vh]">
+		<img src="/gjort/after.webp" alt="" class="crossfadetopimg object-cover w-screen absolute top-0 z-0 my-0">
+		<img src="/gjort/before.webp" alt="" class="crossfadebottomimg object-cover w-screen absolute top-0 z-0 my-0">
+	</section> -->
+
+    <figure class="diff aspect-16/9" tabindex="0">
+        <div class="diff-item-1" role="img">
+          <img alt="daisy" src="/gjort/after.webp" />
+        </div>
+        <div class="diff-item-2" role="img" tabindex="0">
+          <img
+            alt="daisy"
+            src="/gjort/before.webp" />
+        </div>
+        <div class="diff-resizer"></div>
+      </figure>
+
+      <div class="mx-auto max-w-[1200px] [&_h2]:text-5xl [&_h2]:font-bold">
+        <h1 class="text-center font-bold text-6xl pb-36">Vores indflydelse i tal</h1>
+        <div class="grid grid-cols-5 -gap-2 justify-items-center">
+            <div class="grid grid-rows-2 gap-0 ">
+                <h2 class="">1.200 tons</h2>
+                <p>plast fjernet fra havene – Genskaber havøkosystemer i 30 lande.</p>
+            </div>
+
+            <div class="border-r-3"></div>
+
+            <div class="grid grid-rows-2">
+                <h2 class="">80%</h2>
+                <p>reduktion af engangsplast – Samarbejde med 1.000+ virksomheder for at eliminere affald.</p>
+            </div>
+
+            <div class="border-r-3"></div>
+
+            <div class="grid grid-rows-2">
+                <h2 class="">10 mio</h2>
+                <p>mennesker oplyst om plastikforurening – Styrker fællesskaber verden over.
+                    Sammen skaber vi en renere fremtid!</p>
+            </div>
+
+            <div class="border-r-3"></div>
+            <!-- <div class="grid grid-rows-2 gap-4 justify-items-center">
+                <img src="/brugeren/bag.svg" alt="">
+                <p class="text-center max-w-[250px]">
+                    <span>Plastikposer</span><br>
+                    1,5 milliarder plastikposer blev brugt i Danmark i 2019
+                </p>
+            </div> -->
+      </div>
+
+</article>
+
+<script>
+    /* Import af Motion One bibliotek */
+import { animate, stagger, inView, scroll } from "motion";
+
+// js blocks goes here
+
+	/* Crossfade to billeder */
+	scroll(
+	animate(".crossfadebottomimg", {
+		opacity: [1, 0]
+	}), {
+		target: document.querySelector(".crossfadeimages"),
+		offset: ["-25vh", "50vh"]
+	}
+	);
+</script>

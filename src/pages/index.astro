@@ -1,36 +1,46 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Spild from "../components/Spild.astro";
 import Button from "../components/Button.astro";
 import Link from "../components/Link.astro";
 import { Image } from "astro:assets";
 import Header from "../components/Header.astro";
-import Bidrag from "../components/Bidrag.astro";
+
 import Hero from "../components/Hero.astro";
+import Spild from "../components/Spild.astro";
+import Problemet from "../components/Problemet.astro";
+import Brugeren from "../components/Brugeren.astro";
+import Gjort from "../components/Gjort.astro";
+import Bidrag from "../components/Bidrag.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <MainLayout title="Titel">
   <!-- hero section -->
-  <Hero />
+  <Hero></Hero>
   <!-- hero section slut -->
 
   <!-- Hvad er plastik spild -->
-  <Spild />
+  <Spild></Spild>
+  <Spild></Spild>
   <!-- Hvad er plastik spild slut -->
 
   <!-- Hvad er problemet med engangsplast -->
+  <Problemet></Problemet>
   <!-- Hvad er problemet med engangsplast slut -->
 
   <!-- Hvad kan brugeren gøre -->
+  <Brugeren></Brugeren>
   <!-- Hvad kan brugeren gøre slut -->
 
   <!-- Hvad har plastik gjort -->
+   <Gjort></Gjort>
   <!-- Hvad har plastik gjort slut-->
 
   <!-- Bidrag -->
-  <Bidrag />
+   <Bidrag></Bidrag>
   <!-- Bidrag slut -->
 
   <!-- Video, donation og nyhedsbrev -->
+   <Footer></Footer>
   <!-- Video, donation og nyhedsbrev slut-->
 </MainLayout>
