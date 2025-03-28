@@ -28,3 +28,10 @@ const { title } = Astro.props;
     </footer>
   </body>
 </html>
+
+<script>
+  /* Import af Motion One bibliotek */
+  import { animate, stagger, inView, scroll } from "motion";
+
+  animate("body", { opacity: [0, 1] }, { duration: 1 });
+</script>

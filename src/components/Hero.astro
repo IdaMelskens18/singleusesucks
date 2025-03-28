@@ -6,8 +6,10 @@ import arrow from "../assets/images/arrow.png";
 
 <section class="bg-[url('/images/bg_hero.png')] bg-cover bg-no-repeat bg-center relative h-screen">
   <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center pt-60">
-    <h1 class="text-7xl font-bold">Engangsplast forurener <br /> vores hav, luft og jord!</h1>
-    <h2 class="text-4xl mt-5 z-10">Drop engangsplast og vær en del af løsningen!</h2>
+    <div class="fotoinview">
+      <h1 class="text-7xl font-bold">Engangsplast forurener <br /> vores hav, luft og jord!</h1>
+      <h2 class="text-4xl mt-5 z-10">Drop engangsplast og vær en del af løsningen!</h2>
+    </div>
     <div>
       <Image src={arrow} alt="pil ned" class="w-10 z-1 pt-40 animate-bounce" />
     </div>
@@ -15,5 +17,11 @@ import arrow from "../assets/images/arrow.png";
 </section>
 
 <script>
-  import { inView } from "motion";
+  /* Import af Motion One bibliotek */
+  import { animate, stagger, inView, scroll } from "motion";
+
+  /* inView animation */
+  inView(".fotoinview", () => {
+    animate(".fotoinview", { y: [-1000, 0] }, { duration: 2 });
+  });
 </script>
